@@ -8,7 +8,7 @@ app.use(express.json());
 
 // 🔗 Connect MongoD
 console.log("MONGO_URL VALUE:",
-            process.env.MONGO_URL);
+ process.env.MONGO_URL);
 mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
