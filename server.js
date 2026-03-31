@@ -77,6 +77,11 @@ app.post("/send", async (req, res) => {
   }
 });
 
+// 🏠 Root route
+app.get("/", (req, res) => {
+  res.send("<h1>CipherChat Backend 🚀</h1><p>Server is running!</p>");
+});
+
 // 🚀 Start server
 const PORT = process.env.PORT;
 app.listen(PORT, "0.0.0.0", () => {
